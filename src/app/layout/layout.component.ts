@@ -10,6 +10,10 @@ export class LayoutComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    
+  }
+  helloWorld(){
+    alert('Hello world!')
   }
 
 }
