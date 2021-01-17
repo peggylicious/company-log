@@ -1,0 +1,100 @@
+// $sidebar__height: 100vh;
+$sidebar_background__color: rgb(78, 115, 223);
+// $sidebar__width__mobile: 250px;
+// $sidebar__width__desktop__collapsed: 80px;
+// $sidebar__width__desktop_expanded: 250px;
+
+// $ham__height: 48px;
+// $ham__distance: 48px;
+// .sidebar-wrapper{
+//     height: $sidebar__height;
+//     width: $sidebar__width__mobile;
+//     background-color: $sidebar_background__color;
+//     position: fixed;
+//     z-index: 2;
+//     left: 0;
+//     transform: translateX(-$sidebar__width__mobile);
+//     transition: transform 2s;
+// }
+// .ham-wrap{
+//     width: $ham__distance;
+//     height: $ham__height;
+//     border: 1px solid #000;
+//     position: absolute;
+//     right: -$ham__distance;
+//     top: 0;
+// }
+
+// @media only screen and (min-width: 768px){
+//     .sidebar-wrapper{
+//         width: $sidebar__width__desktop__collapsed;
+//         transform: translateX(0);
+//         transition: width 2s;
+//     }
+// }
+.logo{
+    height: 70px;
+    width: 100%;
+    display: block;
+    position: relative;
+}
+.logo-constructor{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.logo-icon-head, .logo-icon-lip{
+    display: block;
+}
+.logo-icon-head{
+    width: 39px;
+    height: 39px;
+    background-color: #fff;
+    border-radius: 100%;
+    position: relative;
+}
+.logo-icon-lip{
+    width: 30px;
+    height: 12px;
+    border-bottom-right-radius: 35px;
+    border-bottom-left-radius: 35px;
+    background-color: $sidebar_background__color; 
+    position: absolute;
+    left: 4px;
+    bottom: 3px;
+}
+.logo-icon-head::before{
+    width: 10px;
+    height: 10px;
+    content: "";
+    background-color: $sidebar_background__color;
+    border-radius: 100%;
+    position: absolute;
+    top: 10px;
+    left: 5px;
+}
+.logo-icon-head::after{
+    width: 10px;
+    height: 10px;
+    content: "";
+    background-color: $sidebar_background__color;
+    border-radius: 100%;
+    position: absolute;
+    top: 10px;
+    right: 5px;
+}
+
+
+.company-nav-links{
+    overflow-y: auto;
+    overflow-x: hidden;
+    max-height: calc(100% - 70px);
+}
+.company-link{
+    text-decoration: none;
+    padding: 8px 12px;
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+}

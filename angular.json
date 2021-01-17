@@ -92,6 +92,7 @@
               "src/assets"
             ],
             "styles": [
+              "src/sidebar-toggler.scss",
               "src/styles.scss"
             ],
             "scripts": []
@@ -123,6 +124,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "company-log"
+    }
+  },
+  "defaultProject": "company-log",
+  "cli": {
+    "analytics": false
+  }
 }
